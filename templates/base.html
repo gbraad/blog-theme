@@ -54,13 +54,8 @@
     {% include 'includes/twitter_cards.html' %}
 
     <!-- Bootstrap -->
-    {% if BOOTSTRAP_THEME %}
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css" type="text/css"/>
-    {% else %}
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" type="text/css"/>
-    {% endif %}
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet">
-
+	<link href="//cdn.gbraad.nl/css/bootstrap.css" rel="stylesheet">
+	<link href="//cdn.gbraad.nl/css/font-awesome.css" rel="stylesheet">
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
     {% if 'tipue_search' in PLUGINS %}
     <link href="{{ SITEURL}}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" rel="stylesheet">
@@ -71,7 +66,9 @@
     {% if TYPOGRIFY %}
         <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/typogrify.css" rel="stylesheet">
     {% endif %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css"/>
+	<link href="//cdn.gbraad.nl/css/animations.css" rel="stylesheet">
+	<link href="//cdn.gbraad.nl/css/style.css" rel="stylesheet">
+	<link href="//cdn.gbraad.nl/css/custom.css" rel="stylesheet">
     {% if CUSTOM_CSS %}
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
